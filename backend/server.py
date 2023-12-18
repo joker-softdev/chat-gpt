@@ -12,7 +12,7 @@ CORS(app)  # Enable CORS for all routes in the app
 
 client = OpenAI(
     # This is the default and can be omitted
-    api_key= "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",
+    api_key= "replace openAI api key",
 )
 
 def get_completion(prompt):
