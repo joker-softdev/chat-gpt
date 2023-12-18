@@ -2,7 +2,7 @@
 # MongoDB connection configuration
 import pymongo
 import sys
-from private import connection_string, DB_NAME, COLLECTION_NAME, CHAT_LOGS_COLLECTION_NAME
+from db_setup.mongodb.db_setup import connection_string, DB_NAME, COLLECTION_NAME, CHAT_LOGS_COLLECTION_NAME
 
 try:
   client = pymongo.MongoClient(connection_string)
@@ -102,7 +102,3 @@ def db_remove_chat(username, chat_id):
 
   result_multiple = 'success'
   return result_multiple
-
-
-    # Replace with your condition
-

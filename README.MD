@@ -10,13 +10,18 @@ https://www.mongodb.com/try/download/community
 
 ## Backend
 
-#### Go to Backend and setup python libraries
+#### Go to backend and setup python libraries
 ```bash
 cd backend
 pip install -r requirements.txt
 ```
 
-#### run Backend
+#### Make 'config.py' file and type this
+```bash
+API_KEY = your API key
+```
+
+#### run backend
 ```bash
 python server.py
 ```
@@ -26,13 +31,13 @@ python server.py
 
 ## Frontend
 
-#### Go to Frontend and setup npm
+#### Go to frontend and setup npm
 ```bash
 cd frontend
 npm install
 ```
 
-#### run Frontend
+#### run frontend
 ```bash
 npm start
 ```
