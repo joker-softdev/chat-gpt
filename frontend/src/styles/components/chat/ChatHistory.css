@@ -1,0 +1,65 @@
+.chat-history {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    overflow-y: auto;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.chat-history::-webkit-scrollbar {
+    width: 12px;
+}
+  
+.chat-history::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.chat-history::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.chat-history::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+}
+
+.chat-history-date {
+    font-size: 17px;
+    color: grey;
+}
+
+.chat-history-body {
+    position: relative; 
+    margin-bottom: 10px;
+    float: center;
+    width: 80%;
+    background-color: #e2e6ee;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.chat-history-body:hover {
+    background-color: #acacac;
+}
+
+/* Button click effect */
+.chat-history-body:active {
+    background-color: #4d4d4d;
+}
+
+.chat-history-body.disabled {
+    background-color: #acacac;
+}

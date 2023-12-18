@@ -1,0 +1,181 @@
+.chat-input {
+    grid-row: 3;
+    grid-column: 2;
+    position: relative; 
+    display: flex;
+}
+
+.chat-input-rounded-rect {
+    width: calc(100% - 120px);
+    height: 80%;
+    background-color: #fff; /* Background color for the rounded input */
+    border-radius: 20px; /* Adjust the border-radius for different levels of rounding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff; /* Text color inside the input */
+    font-family: Arial, sans-serif;
+}
+
+.chat-input-rounded-rect.disabled {
+    background-color: rgba(228, 228, 228, 50);
+}
+
+.chat-input-new-chat-button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3469db; /* Change this to your desired background color */
+    color: #ffffff; /* Change this to your desired text color */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s;
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.circle-plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #ffffff;
+  }
+  
+.comment {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.chat-input-new-chat-button:hover {
+    background-color: rgb(72, 82, 224);
+    color: #fff;
+}
+
+.chat-input-new-chat-button:active {
+    background-color: #69b6e2;
+    color: #fff;
+}
+
+.chat-input-new-chat-button:disabled {
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #ccc;
+    background-color: #f0f0f0;
+}
+
+.chat-input-button-send-group {
+    padding-top: 10px;
+    height: 30px;
+    position: relative;
+}
+
+.chat-input-button-send {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    right: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input-button-send:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.chat-input-button-send:active {
+    background-color: #c5d6e0;
+    color: #fff;
+}
+
+.chat-input-button-send:disabled {
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #ccc;
+    background-color: #f0f0f0;
+}
+
+.chat-input-button-learn {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    right: 90px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input-button-learn:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.chat-input-button-learn:active {
+    background-color: #c5d6e0;
+    color: #fff;
+}
+
+.chat-input-button-learn:disabled {
+    cursor: not-allowed;
+    border: 1px solid #ccc;
+    color: #ccc;
+    background-color: #f0f0f0;
+}
+
+.chat-input-textarea-field {
+    flex: 1;
+    /*border: 1px solid #bbbbbb;
+    border-radius: 10px;  Create an ellipse shape */
+    border: none;
+    background: none;
+    color: black;
+    resize: none;
+    outline: none;
+    overflow: auto;
+    margin-left: 15px;
+    margin-right: 35px;
+    padding: 10px;
+    
+}
+
+.chat-input-textarea-field::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.chat-input-textarea-field::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input-textarea-field::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.chat-input-textarea-field::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+}
+
+.chat-input-button-container {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    float: right;
+}
